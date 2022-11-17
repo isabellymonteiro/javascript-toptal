@@ -10,7 +10,7 @@ function magicNumber() {
 window.onload = magicNumber()
 
 function promptUser() {
-  userAnswer = prompt(`Guess the random number from 1 to 100 — you have ${7 - numberOfGuesses} tries left.`)
+  userAnswer = prompt(`Guess the magic number from 1 to 100 — you have ${7 - numberOfGuesses} tries left.`)
 }
 
 for (var numberOfGuesses = 0; numberOfGuesses <= 7; numberOfGuesses++) {
