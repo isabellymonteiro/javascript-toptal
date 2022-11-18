@@ -52,6 +52,6 @@ export default class TaskList {
   }
 
   printAll() {
-    console.log(this.getAll())
+    console.table(this.getAll())
   }
 }

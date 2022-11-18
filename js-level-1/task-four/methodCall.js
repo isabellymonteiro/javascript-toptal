@@ -8,13 +8,13 @@ console.group("Isabelly's TaskList instance:")
 isabellyTaskList.add("My 1st task", 3)
 isabellyTaskList.add(newString, 2)
 isabellyTaskList.add("Another task", 4)
-console.log(isabellyTaskList.getAll())
+console.table(isabellyTaskList.getAll())
 console.log(isabellyTaskList.getById(1))
 isabellyTaskList.remove(2)
 isabellyTaskList.add("Finish this homework", 5)
 isabellyTaskList.sortByPriority()
 isabellyTaskList.printAll()
-console.log(isabellyTaskList.getIf(function(task) {
+console.table(isabellyTaskList.getIf(function(task) {
   return task.name.charAt(0) === 'A'
 }))
 console.groupEnd()
