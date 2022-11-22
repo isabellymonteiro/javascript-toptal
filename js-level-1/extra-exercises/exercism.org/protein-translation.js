@@ -1,4 +1,5 @@
 // https://exercism.org/tracks/javascript/exercises/protein-translation
+"use strict"
 
 const proteins = {
   AUG: 'Methionine',

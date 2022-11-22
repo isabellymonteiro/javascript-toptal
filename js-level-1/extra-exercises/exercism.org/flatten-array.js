@@ -1,4 +1,5 @@
 // https://exercism.org/tracks/javascript/exercises/flatten-array
+"use strict"
 
 // primary solution
 export const flatten = (list) => {
