@@ -20,7 +20,7 @@ const rotate = (string, rotationNumber) => {
 
 /* secondary solution
 const rotate = (string, rotationNumber) => {
-  const stringArray = string.split('')
+  const stringArray = [...string]
 
   return stringArray.reduce((newString, currentCharacter) => {
     let asciiNumber = currentCharacter.charCodeAt(0)
