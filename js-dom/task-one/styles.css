@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+h1, h2 {
+  color: darkslategrey;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+form {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+
+#countdown-input {
+  box-sizing: border-box;
+  color: darkslategrey;
+  font-weight: 600;
+  padding: .5rem .75rem;
+  border: 2px solid darkslategrey;
+  border-radius: .75rem;
+  width: 100%;
+  max-width: 200px;
+}
+
+#countdown-button {
+  color: white;
+  font-weight: 600;
+  background-color: darkslategrey;
+  border: none;
+  border-radius: .75rem;
+  padding: .75rem 0;
+  width: 100%;
+  max-width: 200px;
+  cursor: pointer;
+  transition: .25s;
+}
+
+#countdown-button:hover {
+  background-color: darkcyan;
+}
+
+.countdowns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.countdowns li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid darkslategrey;
+  border-radius: .75rem;
+  padding: 0 .75rem;
+}
+
+.cancelButton {
+  color: white;
+  background-color: darkred;
+  border: none;
+  border-radius: .75rem;
+  padding: .5rem .75rem;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.cancelButton:hover {
+  background-color: firebrick;
+}

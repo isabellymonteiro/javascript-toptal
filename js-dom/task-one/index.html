@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./script.js" type="module" defer></script>
+  <title>Task 1 - Countdown</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Task 1 - Countdown</h1>
+    </header>
+    <main>
+      <div>
+        <form>
+          <label for="countdown-input">Choose the time for your countdown (hh:mm:ss):</label>
+          <input 
+            type="time" 
+            id="countdown-input"
+            name="countdown-input"
+            value="00:00:00" 
+            step="1" 
+            placeholder="hh:mm:ss" 
+            required
+          >
+          <button type="submit" id="countdown-button">Insert Countdown</button>
+        </form>
+      </div>
+      <div>
+        <h2>Current Countdowns</h2>
+        <ul class="countdowns"></ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
