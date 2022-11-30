@@ -18,9 +18,9 @@ export default class Countdown {
         this.minutes = Math.floor(this.timeRemaining / 60) % 60,
         this.seconds = Math.floor(this.timeRemaining % 60)
         
-        if (this.hours < 10) this.hours = this.hours.toString().padStart(2, 0)
-        if (this.minutes < 10) this.minutes = this.minutes.toString().padStart(2, 0)
-        if (this.seconds < 10) this.seconds = this.seconds.toString().padStart(2, 0)
+        if (this.hours < 10) this.hours = "0" + this.hours
+        if (this.minutes < 10) this.minutes = "0" + this.minutes
+        if (this.seconds < 10) this.seconds = "0" + this.seconds
         
         this.countdownItem.firstElementChild.textContent = `${this.hours}:${this.minutes}:${this.seconds}`
       }  
