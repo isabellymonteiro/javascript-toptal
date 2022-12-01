@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: midnightblue;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  gap: .75rem;
+  border: 2px solid midnightblue;
+  border-radius: .75rem;
+  padding: 5%;
+  width: 100%;
+  max-width: 400px;
+}
+
+button {
+  color: white;
+  font-weight: 600;
+  background-color: midnightblue;
+  border: 3px solid midnightblue;
+  border-radius: .75rem;
+  padding: .75rem;
+  cursor: pointer;
+  transition: .25s;
+}
+
+button:hover {
+  background-color: cornflowerblue;
+}
+
+li button {
+  color: midnightblue;
+  background-color: lightblue;
+  width: 100%;
+}
+
+#start-button, .controlButton {
+  text-transform: uppercase;
+}
+
+.option--right > button {
+  border-color: green;
+}
+
+.option--wrong > button {
+  border-color: firebrick;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+ul {
+  display: grid;
+  gap: .75rem;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+form > label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: midnightblue;
+  font-weight: 600;
+}
+
+form > input {
+  box-sizing: border-box;
+  color: midnightblue;
+  font-weight: 600;
+  padding: .5rem .75rem;
+  border: 2px solid midnightblue;
+  border-radius: .75rem;
+}
+
+.form__button {
+  text-transform: uppercase;
+  margin-top: 0.75rem;
+}
+
+table {
+  font-size: 1.25rem;
+  color: midnightblue;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  padding: 8px;
+  border: 1px solid midnightblue;
+}
