@@ -3,11 +3,17 @@ const timers = document.getElementById('timers')
 
 let totalTimers = 0
 
+const getRandomSeconds = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
 startTimerButton.addEventListener('click', () => {
   totalTimers++
   updateButton()
 
-  startTimer(Math.floor(Math.random() * 8) + 2).then((doneString) => {
+  const randomSeconds = getRandomSeconds(2, 9)
+
+  startTimer(randomSeconds).then(doneString => {
     totalTimers--
     updateButton()
     
@@ -18,20 +24,14 @@ startTimerButton.addEventListener('click', () => {
   })
 })
 
-const startTimer = (seconds) => { 
-  return new Promise((resolve) => {
+const startTimer = (seconds) => 
+  new Promise((resolve) => {
     setTimeout(() => {
       resolve(`Done in ${seconds} seconds!`)
     }, 1000 * seconds)
   })
-}
 
 const updateButton = () => {
-  if (totalTimers === 3) {
-    startTimerButton.setAttribute('disabled', true)
-  } else {
-    startTimerButton.removeAttribute('disabled')
-  }
-  
+  startTimerButton.disabled = totalTimers === 3
   startTimerButton.textContent = `Start timer (${totalTimers}/3)`
 }
