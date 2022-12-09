@@ -7,7 +7,6 @@ const form = document.querySelector('form')
 const countryList = document.getElementById('country__list')
 const searchInput = document.getElementById('search-input')
 
-
 const renderCountries = async () => {
   cleanNotFound()
 
@@ -49,7 +48,6 @@ const filterBySearchTerm = async (searchTerm) => {
     cleanList(countryList)
     createCountryList(data)
   } catch(error) {
-    console.log('pegou')
     showNotFound()
   }
 }

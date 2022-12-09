@@ -1,0 +1,101 @@
+@import 'variables.css';
+
+body {
+  color: var(--light-yellow);
+  font-family: var(--main-font);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--dark-blue);
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+form {
+  display: grid;
+  gap: .75rem;
+  justify-self: center;
+  width: 100%;
+  max-width: 240px;
+}
+
+form label {
+  font-weight: 500;
+  text-align: center;
+}
+
+#search-input, #search-button {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  width: 100%;
+}
+
+#search-input {
+  color: var(--dark-blue);
+  background-color: var(--yellow);
+}
+
+#search-button {
+  background-color: var(--orange);
+  cursor: pointer;
+  transition: .5s;
+}
+
+#search-button:hover {
+  background-color: var(--red);
+}
+      
+#country__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 0;
+  max-width: 1280px;
+}
+
+.country {
+  box-sizing: border-box;
+  list-style: none;
+  display: grid;
+  grid-template-rows: max-content auto max-content;
+  font-weight: 500;
+  color: var(--dark-blue);
+  background-color: var(--light-yellow);
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 260px;
+  padding: 1rem;
+}
+
+.country__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--red);
+  margin: 0;
+  margin-bottom: .75rem;
+}
+
+.country__flag {
+  display: grid;
+  place-self: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.country__capitals,
+.country__continents,
+.country__languages {
+  font-weight: 400;
+}

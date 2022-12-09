@@ -14,8 +14,11 @@ const createCountryCard = (countryData) => {
     ? countryData.capital.join(', ') 
     : 'Unavailable'
 
+  const countryFlag = clone.querySelector('.country__flag')
+  countryFlag.src = countryData.flags.svg
+  countryFlag.alt = `${countryData.name.common} flag`
+
   clone.querySelector('.country__name').textContent = countryData.name.common
-  clone.querySelector('.country__flag').src = countryData.flags.svg
   clone.querySelector('.country__capitals').textContent = countryCapitals
   clone.querySelector('.country__continents').textContent = countryData.continents.join(', ')
   clone.querySelector('.country__languages').textContent = contryLanguages
